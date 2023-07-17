@@ -4,3 +4,4 @@ pydantic
 SQLAlchemy
 starlette
 uvicorn
+python-multipart

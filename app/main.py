@@ -1,8 +1,13 @@
+import os
+import sys
 import uvicorn
 from fastapi import FastAPI
-from app.router.users import user_router
-from app.router.tables import table_router
-from app.middleware.cors import cors
+
+# sys.path.insert(0, os.path.dirname(os.path.abspath(__file__))[0])
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from router.users import user_router
+from router.tables import table_router
+from middleware.cors import cors
 
 
 def main():

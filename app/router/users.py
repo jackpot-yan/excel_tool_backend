@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 from app.models.base import Login
-from ..controllers.users import User
+from app.controllers.users import User
 
 
 def user_router() -> APIRouter:
